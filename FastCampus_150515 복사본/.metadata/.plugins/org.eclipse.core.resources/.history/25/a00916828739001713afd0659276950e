@@ -1,0 +1,19 @@
+package Plane;
+
+public class Example {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		SupersonicAirplane concord = new SupersonicAirplane();
+		concord.takeoff();
+		concord.fly();
+		concord.flyMode = SupersonicAirplane.SUPERSONIC;
+		concord.fly();
+		concord.flyMode = SupersonicAirplane.NORMAL;
+		concord.fly();
+		concord.land();
+
+	}
+
+}

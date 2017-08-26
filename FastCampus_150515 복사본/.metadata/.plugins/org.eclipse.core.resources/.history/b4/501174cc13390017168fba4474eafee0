@@ -1,0 +1,31 @@
+package com.junhee.java.basic;
+
+// 사용하고자 하는 클래스가 다른 패키지에 있을 때는 import로 불러옴 
+import com.junhee.java.basicsub.BasicSub;
+
+public class BasicMain {
+
+	public static void main(String args[]) {
+		
+		// switch 입력 값이 있을 때
+		// if 는 내가 쓰고 싶을 때
+		
+		String a = "스트라이크";
+		String b = "볼";
+		// 반복문
+		for ( ; ;) {
+			
+			// 조건식 사용하지 않아도 무한루프로 실행 
+
+		}
+		
+		while (조건식) {
+			//
+		}
+		
+		do {
+			// 조건과 항관 없이 무조건 한 번 실행하고 싶을 
+		} while (조건식);
+		
+	}
+}

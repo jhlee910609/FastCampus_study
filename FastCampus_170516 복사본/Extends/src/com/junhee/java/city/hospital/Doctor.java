@@ -1,0 +1,17 @@
+package com.junhee.java.city.hospital;
+
+import com.junhee.java.city.design.People;
+
+public class Doctor extends People {
+	
+	public String myPatient;
+
+	public void diagnosis(String myPatient) {
+		System.out.println(myPatient + "님을 진찰합니다.");
+	}
+	
+	public void getMyPatient(String name) {
+		this.myPatient = name;
+		
+	}
+}

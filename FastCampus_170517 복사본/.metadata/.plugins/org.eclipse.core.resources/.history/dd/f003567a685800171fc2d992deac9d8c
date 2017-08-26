@@ -1,0 +1,6 @@
+package com.junhee.java.observer;
+
+public interface DisplayElement {
+	public void display();
+
+}

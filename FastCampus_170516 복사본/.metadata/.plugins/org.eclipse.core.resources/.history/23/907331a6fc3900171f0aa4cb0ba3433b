@@ -1,0 +1,24 @@
+package com.junhee.java.exception;
+
+public class ExceptionMain {
+
+	public static void main(String[] args) {
+
+		// 예외 처리 try-catch;
+
+		try {
+			// 실행시킬 로직 작성
+			int array[] = new int[6];
+
+			array[5] = 10;
+			array[6] = 11;
+			
+			// (예외 종류 이름 e) >
+		} catch (ArrayIndexOutOfBoundsException nameOfException) {
+			String msg = nameOfException.getMessage();
+			System.out.println(msg);
+
+		}
+
+	}
+}

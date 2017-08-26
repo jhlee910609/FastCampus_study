@@ -1,0 +1,27 @@
+package com.junhee.java.polymophism;
+
+public class PolyMain {
+
+	public static void main(String[] args) {
+		
+		// new = 나 객체.
+		// 타입 부모로 대체 가능.
+		
+		Father son = new Son();
+		son.setName("쥬니어");
+		System.out.println(son.getName());
+		// 부모 객에서 만든 함수들만 나타남.
+		// 자식 객체에서 만든 함수들은 뜨지 않음.
+		// 그래서 아래 코드 오류남. 
+		son.goSchool();
+		
+		
+		
+		// 다형형과 관련된 
+		
+	}
+}
+
+
+==== 상속 관계에서의 다형성 ====
+new로 만든 

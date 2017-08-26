@@ -1,0 +1,8 @@
+package com.junhee.java.city;
+
+public class Police extends Building {
+
+	
+	
+	
+}

@@ -6,8 +6,6 @@ public class ArrayMain {
 
 		int arr1[] = new int[10];
 		
-	
-		
 		for( int a1 : arr1) {
 			System.out.println(a1);
 		}		
@@ -17,9 +15,7 @@ public class ArrayMain {
 			System.out.println(a2);
 		}
 		
-		// 메모리만 할당되어 있지, 값을 넣어놓지 않았음
-		// 
-		
+		// 배열의 길이를 활용하여 메모리만 할당되어 있지, 값을 넣어놓지 않았음
 		ArraySub sub[] = new ArraySub[10];
 		
 		for( ArraySub subs : sub) {

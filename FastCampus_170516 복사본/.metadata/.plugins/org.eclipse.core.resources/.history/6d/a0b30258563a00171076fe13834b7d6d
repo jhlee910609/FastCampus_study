@@ -1,0 +1,52 @@
+package com.junhee.java.hospital;
+
+public class HospitalMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Hospital hospital = new Hospital();
+
+		// 의사 3 명, 환자 21 명, 간호사 7 명
+		Doctor[] doctor = new Doctor[3];
+		Nurse[] nurse = new Nurse[7];
+		Patient[] patient = new Patient[21];
+
+		hospital.doctor = doctor.length;
+		hospital.nurse = nurse.length;
+		hospital.patient = patient.length;
+
+		for (int i = 0; i < doctor.length; i++) {
+			doctor[i] = new Doctor();
+			doctor[i].setName("의사 : " + (i + 1));
+		}
+
+		for (int i = 0; i < nurse.length; i++) {
+			nurse[i] = new Nurse();
+			nurse[i].setName("간호사 : " + (i + 1));
+		}
+
+		for (int i = 0; i < patient.length; i++) {
+			patient[i] = new Patient();
+			patient[i].setName("환자 : " + (i + 1));
+		}
+
+		// 의사 3명이 환자 7명씩 치료
+		int j = 0;
+		for (int i = 0; i < doctor.length; i++) {
+			System.out.println("-------" + doctor[i].getName() + "-------" );
+			for (; j < (i*patient.length/doctor.length);) {
+				doctor[i].checkUp(patient[j].getName());
+				j = j+1;
+			}
+
+		}
+
+		// 간호사 7명 각기 다른 방향으로 움직임
+		for (int i = 0; i < nurse.length; i++) {
+			System.out.print(nurse[i].getName() + " 이 ");
+			nurse[i].move(i);
+		}
+
+	}
+
+}

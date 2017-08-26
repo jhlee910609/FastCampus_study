@@ -1,0 +1,9 @@
+package com.junhee.java.city.hospital;
+
+import com.junhee.java.city.design.People;
+
+public class Doctor extends People {
+	public void move(String direction) {
+		System.out.println(direction + "으로 움직인다.");
+	}
+}

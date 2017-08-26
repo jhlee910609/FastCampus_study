@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename field &apos;channel&apos; in &apos;Phone.DmbCellPhone&apos; to &apos;currentChannel&apos;&#x0A;- Original project: &apos;Inheritance&apos;&#x0A;- Original element: &apos;Phone.DmbCellPhone.channel&apos;&#x0A;- Renamed element: &apos;Phone.DmbCellPhone.currentChannel&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="false" description="Rename field &apos;channel&apos;" flags="589830" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/src&lt;Phone{DmbCellPhone.java[DmbCellPhone^channel" name="currentChannel" references="true" setter="false" stamp="1500789851191" textual="false" version="1.0"/>
+</session>

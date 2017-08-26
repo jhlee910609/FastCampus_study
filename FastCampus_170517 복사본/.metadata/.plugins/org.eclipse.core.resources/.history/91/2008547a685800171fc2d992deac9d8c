@@ -1,0 +1,17 @@
+package com.junhee.java.observer;
+
+public class WeatherStation {
+
+	public static void main(String[] args) {
+		
+		WeatherData weahterData = new WeatherData();
+		
+		CurrentConditionDisplay ccds = new CurrentConditionDisplay(weahterData);
+		
+		weahterData.setMeasurements(12, 33, 1111);
+		weahterData.setMeasurements(123, 123, 20.3F);
+		
+
+	}
+
+}

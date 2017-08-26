@@ -1,0 +1,30 @@
+package com.junhee.java.exception;
+
+public class ExceptionPractice {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int[] array = new int[6];
+
+		try {
+
+			array[0] = 31;
+			array[5] = 10;
+
+			int x = 1 / 0;
+			String s = "asdfsf";
+			int a = Integer.parseInt(s);
+			array[7] = 12;
+
+		} catch (ArrayIndexOutOfBoundsException e) {
+			e.printStackTrace();
+		} catch (ArithmeticException e) {
+			e.printStackTrace();
+		} finally {
+			System.out.println("다섯 번 째 값 = " + array[5]);
+		}
+		System.out.println("시스템이 완료되었습니다.");
+	}
+
+}

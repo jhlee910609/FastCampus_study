@@ -1,0 +1,29 @@
+package com.junhee.java.observer;
+
+public class CurrentConditionDisplay implements Observer, DisplayElement {
+	
+	private float temp;
+	private float humid;
+	private Subject weatherData;
+	
+	public CurrentConditionDisplay(Subject weather){
+		this.weatherData = weather;
+		weatherData.registerObserver(this);
+	}
+	
+	
+
+	@Override
+	public void display() {
+		System.out.println("Current conditions : " + temp + "F degrees and " + humid + "% humid");
+		
+	}
+
+	@Override
+	public void update(float temparature, float humidity, float pressure) {
+		this.temp = temparature;
+		this.humid = humidity;
+		display();	
+	}
+
+}

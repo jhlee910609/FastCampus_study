@@ -1,0 +1,29 @@
+package com.junhee.java.obj;
+
+public class Father {
+
+	public String lastname;
+	public String name;
+
+	public int age;
+	public int money;
+	public String house;
+	public String car;
+	public String wife;
+
+	
+	public void process9 () {
+		// 9줄의 코드 
+	}
+	
+	public void goDestination() {
+		process9 ();
+		System.out.println("회사를 출근합니다.");
+	}
+	
+
+	
+	// 상속 시키고 싶지 않다면 
+	// private 을 걸어주면 됨. 코드블럭{} 안에서만 호출할 수 있음.
+	
+}

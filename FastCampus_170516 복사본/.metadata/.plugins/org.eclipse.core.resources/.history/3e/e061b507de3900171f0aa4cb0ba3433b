@@ -1,0 +1,24 @@
+package com.junhee.java.obj;
+
+public class Son extends Father {
+	public String wife;
+	public String girlfriend;
+	@Override
+	public void goDestination() {
+		// TODO Auto-generated method stub
+		super.goDestination();
+	}
+	
+	
+
+	
+	/*
+	 * --- Father의 클래스 멤버 default 호출 ---
+	 * public String lastname; public String name;
+	 * 
+	 * public int age; public int money; public String house; public String car;
+	 * public String wife;
+	 * 
+	 */
+
+}

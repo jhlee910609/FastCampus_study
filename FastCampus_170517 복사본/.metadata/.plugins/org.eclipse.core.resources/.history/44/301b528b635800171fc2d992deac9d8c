@@ -1,0 +1,42 @@
+
+public class Duck extends Bird {
+	
+	String name;
+	
+	public Duck(String name){
+		this.name = name;
+	}
+	
+	public void introductMyself(String name){
+		System.out.println("My name is " + name);
+		
+	}
+
+	@Override
+	public void takeOff() {
+		System.out.println("Duck is take off.");
+		
+	}
+
+	@Override
+	public void flying() {
+		System.out.println("the duck is flying now");
+		
+	}
+
+	@Override
+	public void land() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void eat(String food) {
+		System.out.println("the duck is eating " + food);
+		
+		
+	}
+
+
+
+}

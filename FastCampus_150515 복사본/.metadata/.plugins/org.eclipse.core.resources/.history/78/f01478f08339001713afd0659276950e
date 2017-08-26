@@ -1,0 +1,14 @@
+
+public class StudentExam {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Student student = new Student("홍길동", "124812348921749", 1);
+		System.out.println("name : " + student.name);
+		System.out.println("ssn : " + student.ssn);
+		System.out.println("id : " + student.studentNo);
+		
+
+	}
+
+}

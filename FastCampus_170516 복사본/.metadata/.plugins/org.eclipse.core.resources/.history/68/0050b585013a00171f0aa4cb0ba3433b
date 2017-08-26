@@ -1,0 +1,5 @@
+package com.junhee.java.polymophism;
+
+public class Son extends Father {
+
+}

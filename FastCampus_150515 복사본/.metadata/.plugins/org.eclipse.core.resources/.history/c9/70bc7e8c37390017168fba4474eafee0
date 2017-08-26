@@ -1,0 +1,13 @@
+package com.junhee.java.pr;
+
+public class Practice {
+
+	public static void main(String[] args) {
+		int i = 0;
+		int result = i++;
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}

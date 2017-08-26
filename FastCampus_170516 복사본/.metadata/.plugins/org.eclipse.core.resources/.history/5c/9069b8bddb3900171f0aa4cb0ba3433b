@@ -1,0 +1,21 @@
+package com.junhee.java.obj;
+
+public class Son extends Father {
+	
+	
+    /* --- Father의 클래스 멤버 default 호출 ---	
+	public String lastname;
+	public String name;
+
+	public int age;
+	public int money;
+	public String house;
+	public String car;
+	public String wife;
+	
+	*/
+	public String girlfriend;
+	public String wife;
+	
+
+}

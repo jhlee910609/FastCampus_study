@@ -1,0 +1,29 @@
+package com.junhee.java.observer;
+
+import java.util.*;
+
+public class RanNumGenerator implements Subject {
+
+	private List<Subscriber> subs = new ArrayList<>();
+
+	@Override
+	public void addSubscriber(Subscriber sub) {
+		subs.add(sub);
+
+	}
+
+	@Override
+	public void removeSubscriber(Subscriber sub) {
+		subs.remove(sub);
+
+	}
+
+	@Override
+	public void notiSubscriber(List subs) {
+		for(Subscriber sub :  subs){
+			sub.update(this);
+		}
+
+	}
+
+}

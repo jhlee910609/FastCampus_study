@@ -1,0 +1,51 @@
+package com.junhee.java.quiz;
+
+public class MakeMySnail {
+
+	public static void main(String[] args) {
+
+	}
+
+	final static int UP = 0;
+	final static int RIGHT = 1;
+	final static int DOWN = 2;
+	final static int LEFT = 3;
+
+	public static int[][] drawSnail(int count) {
+
+		int result[][] = new int[count][count];
+		int number = 1; // result 배열에 넣고 싶은 숫자
+		int size = count * count;
+		int x = 0;
+		int y = 0;
+		int direction = UP;
+
+		while (number <= size) {
+			for (int i = 0; i < count; i++) {
+				switch (direction) {
+				case UP:
+					x++;
+					break;
+
+				case RIGHT:
+					y++;
+					break;
+
+				case DOWN:
+					x--;
+					break;
+
+				case LEFT:
+					y--;
+					break;
+				}
+				result[y][x] = number;
+				number++;
+			}
+			direction++;
+			if(direction > 3) direction = UP;
+		}
+		return result;
+	}
+
+}

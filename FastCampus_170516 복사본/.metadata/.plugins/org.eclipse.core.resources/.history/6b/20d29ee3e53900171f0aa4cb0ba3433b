@@ -1,0 +1,7 @@
+package com.junhee.java.city;
+
+import com.junhee.java.city.design.Building;
+
+public class Hospital extends Building {
+
+}

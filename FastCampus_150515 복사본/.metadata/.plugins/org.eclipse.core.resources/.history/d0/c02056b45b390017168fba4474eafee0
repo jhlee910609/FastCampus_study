@@ -1,0 +1,55 @@
+package com.junhee.java.quiz;
+
+public class NewDrawSnail {
+
+	public static void main(String[] args) {
+
+		NewDrawSnail draw = new NewDrawSnail();
+		draw.DrawSnail1(5);
+
+	}
+
+	final static int UP = 0;
+	final static int LEFT = 1;
+	final static int DOWN = 2;
+	final static int RIGHT = 3;
+
+	public static int[][] DrawSnail1(int count) {
+
+		int result[][] = new int[count][count];
+		int x = -1;
+		int y = 0;
+		int direction = 0;
+		int number = 1; // 출력되는 숫
+		int size = count;
+
+		while (number <= count * count) {
+			for (int i = 0; i < count; i++) {
+				switch (direction) {
+				case UP:
+					x++;
+					break;
+				case RIGHT:
+					y++;
+					break;
+				case DOWN:
+					x--;
+					break;
+				case LEFT:
+					y--;
+					break;
+				}
+				result[x][y] = number;
+				number++;
+			}
+			direction++;
+			if(direction == LEFT || direction == RIGHT)
+				count--;
+			if(direction > 3) direction = UP;
+		}
+		return result;
+	}
+
+	}
+
+

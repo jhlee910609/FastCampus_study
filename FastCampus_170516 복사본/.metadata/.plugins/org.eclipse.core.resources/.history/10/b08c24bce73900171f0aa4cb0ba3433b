@@ -1,0 +1,25 @@
+package com.junhee.java.city.design;
+
+public class People {
+	
+	private String gender;
+	private int age;
+	private String skinColor;
+	private String hairColor;
+	private int height;
+	private int weight;
+	private String name;
+	
+	public void move(String direction) {
+		System.out.println(direction + "으로 움직인다.");
+	}
+	
+	// private 으로 막힌 정보를 
+	public String getName() {
+		return name;
+	}
+	public void setName(String value) {
+		name = value;
+	}
+
+}

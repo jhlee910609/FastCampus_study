@@ -1,0 +1,16 @@
+package com.junhee.java.polymophism;
+
+public class PolyMain {
+
+	public static void main(String[] args) {
+		
+		Son son = new Son();
+		son.setName("쥬니어");
+		System.out.println(son.getName());
+		
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}

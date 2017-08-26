@@ -1,0 +1,12 @@
+package com.junhee.java.observer;
+
+import java.util.List;
+
+public interface Subject {
+	
+	public void addSubscriber(Subscriber sub);
+	public void removeSubscriber(Subscriber sub);
+	public void notiSubscriber(List subs);
+	
+
+}

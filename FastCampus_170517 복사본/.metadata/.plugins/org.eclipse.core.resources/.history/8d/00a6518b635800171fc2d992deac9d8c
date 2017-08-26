@@ -1,0 +1,9 @@
+
+public abstract class Bird implements Flyable {
+
+	public void eat(String food) {
+		System.out.println("the bird is eating"+ food);
+	}
+	
+
+}

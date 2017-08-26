@@ -1,0 +1,9 @@
+package com.junhee.java.city.hospital;
+
+import com.junhee.java.city.design.People;
+
+public class Doctor extends People {
+	public void diagnosis(Patient patient) {
+		System.out.println(patient.getName()+ "님을 진찰합니다.");
+	}
+}

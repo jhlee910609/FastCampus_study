@@ -1,0 +1,91 @@
+package com.junhee.java.extend;
+
+import java.util.ArrayList;
+
+import com.junhee.java.city.Police;
+import com.junhee.java.city.hospital.*;
+import com.junhee.java.city.hospital.Hospital;
+import com.junhee.java.city.hospital.Nurse;
+import com.junhee.java.city.hospital.Patient;
+import com.junhee.java.obj.Father;
+import com.junhee.java.obj.Son;
+
+public class ExtendMain {
+
+	public static void main(String[] agrs) {
+		
+
+		// 의사 3 명, 환자 21 명, 간호사 6명 만들기. 
+		Doctor dr[] = new Doctor[3];
+		Patient pt[] = new Patient[21];
+		Nurse nr[] = new Nurse[6];
+		
+		// 병원 1 개 건설. 속성 정보 저장 
+		Hospital hospital = new Hospital();
+		hospital.doctor = dr.length;
+		hospital.nurse = nr.length;
+		hospital.patient = pt.length;
+				
+		
+		
+		int j = 0; // 아래 것 때문에 int j = 0;
+
+		for (int i = 0; i < dr.length; i++) {
+			dr[i] = new Doctor();
+			dr[i].setName("Doctor name = " + i);
+		}
+
+		for (int k = 0; k < pt.length; k++) {
+			pt[k] = new Patient();
+			pt[k].setName("Patient name = " + k);
+		}
+
+		for (int l = 0; l < nr.length; l++) {
+			nr[l] = new Nurse();
+			nr[l].setName("Nurse name = " + l);
+		}
+		int n = 0;
+		for (int i = 0; n < dr.length; n++) {
+			for (; j < pt.length/dr.length; j++) {
+				
+				dr[n].diagnosis(pt[j].getName());
+				
+			}
+		}
+
+		for (int k = 0; k < nr.length; k++) {
+			nr[k].move(k + "로 움직입니다.");
+		}
+	}
+}
+
+		/*
+		 * Police police = new Police(); police.floor = "2"; police.color =
+		 * "Blue";
+		 * 
+		 * Father fa = new Father(); fa.totalProcess(); // Fix에 있는
+		 * 
+		 */
+
+		// 메모리 1개 생성
+		// <-- 부모 객체 Father --->
+		/*
+		 * Father father = new Father(); father.lastname = "조던"; father.name =
+		 * "마이클"; father.car = "람보르기니"; father.money = 10000000;
+		 * 
+		 */
+		// <---- 상속 받은 son 인스턴스 --->
+		// 메모리 1개 생성 (2개 영역)
+		// 설계 시, 포괄적으로 포함할 수 있도록 변수(클래스 멤버)를 설정해주는 것이 좋음.
+
+		// <---- Son 인스턴스 생성 ---->
+		/*
+		 * Son son = new Son(); son.lastname = "조던"; son.name = "쥬니어"; son.money
+		 * = 0; son.wife = "수지"; son.girlfriend = "수지";
+		 * 
+		 * System.out.println(son.wife);
+		 * 
+		 */
+
+
+

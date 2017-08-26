@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.junhee.java.obj.Father"/>
+<fullyQualifiedTypeName name="com.junhee.java.obj.Son"/>
+<fullyQualifiedTypeName name="com.junhee.java.city.Police"/>
+<fullyQualifiedTypeName name="com.junhee.java.city.design.Furniture"/>
+<fullyQualifiedTypeName name="com.junhee.java.city.design.People"/>
+<fullyQualifiedTypeName name="com.junhee.java.city.hospital.Hospital"/>
+<fullyQualifiedTypeName name="com.junhee.java.city.hospital.Doctor"/>
+<fullyQualifiedTypeName name="com.junhee.java.city.hospital.Nurse"/>
+<fullyQualifiedTypeName name="com.junhee.java.city.hospital.Patient"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
+<fullyQualifiedTypeName name="com.junhee.java.obj.Building"/>
+<fullyQualifiedTypeName name="com.junhee.java.obj.People"/>
+<fullyQualifiedTypeName name="com.junhee.java.hospital.Doctor"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+</qualifiedTypeNameHistroy>

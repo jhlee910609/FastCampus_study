@@ -1,0 +1,15 @@
+package com.junhee.java.polymophism;
+
+public class PolyMain {
+
+	public static void main(String[] args) {
+		
+		Son son = new Son();
+		son.na
+		
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}

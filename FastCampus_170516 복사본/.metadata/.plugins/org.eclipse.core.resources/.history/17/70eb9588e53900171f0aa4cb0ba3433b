@@ -1,0 +1,7 @@
+package com.junhee.java.city;
+
+import com.junhee.java.city.design.People;
+
+public class Doctor extends People {
+
+}

@@ -1,0 +1,66 @@
+package com.junhee.java.quiz;
+
+public class NewDrawSnail {
+
+	public static void main(String[] args) {
+
+		NewDrawSnail draw = new NewDrawSnail();
+		printSnail(drawSnail1(5));
+	}
+
+	final static int UP = 0;
+	final static int LEFT = 1;
+	final static int DOWN = 2;
+	final static int RIGHT = 3;
+
+	public static int[][] drawSnail1(int count) {
+
+		int result[][] = new int[count][count];
+		int x = -1;
+		int y = 0;
+		int direction = UP;
+		int number = 1; // 출력되는 숫자
+
+		int size = count; // 반복되는 가로와 세로 크
+
+		while (number <= count * count) {
+			for (int i = 0; i < size; i++) {
+				switch (direction) {
+				case UP:
+					x++;
+					break;
+				case RIGHT:
+					y++;
+					break;
+				case DOWN:
+					x--;
+					break;
+				case LEFT:
+					y--;
+					break;
+				}
+				result[y][x] = number;
+				number++;
+			}
+			direction++;
+			if (direction == LEFT || direction == RIGHT)
+				size--;
+			if (direction > 3)
+				direction = UP;
+		}
+		return result;
+	}
+
+	public static void printSnail(int result[][]) {
+		System.out.println("------- count" + result.length + "-------");
+		
+		for (int i = 0; i < result.length; i++) {
+			for (int j = 0; j < result[i].length; j++) {
+				String temp = result[i][j] < 10 ? "0" + result[i][j] : "" + result[i][j];
+				System.out.printf("[%s]", temp);
+			}
+			System.out.println("");
+		}
+		System.out.println("");
+	}
+}

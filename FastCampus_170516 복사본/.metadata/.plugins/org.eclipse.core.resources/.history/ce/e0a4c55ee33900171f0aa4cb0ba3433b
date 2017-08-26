@@ -1,0 +1,33 @@
+package com.junhee.java.obj;
+
+//<-- 추상 클래스의 특징 -->
+
+// 1. 인터페이스와 동일한데 
+// 2. 인터페이스 + 코드
+// 코드뿐만 아니라 메서드 안(코드블럭 내부)에 메서드(기능)을 작성할 수 있음  
+// 로직을 추상화시킬 수 있을 때, abstract를 사용함.
+// interface와 abstract의 공통점은 구현할 메서드를 강제해주는 기능이 있음
+// ㄴ 무조건 구현해줘야하는 필수 조건.
+// 코드 자체가 알고리즘일 경우, 추상 클래스를 통해 작성해주는 게 좋음. 
+// 최적화된 코드들을 변경할 이유가 없을 때. '최적화된 코드'라함은 변경할 여지가 없는 코드.  
+
+public abstract class Fix {
+
+	public void process() {
+		disassemble();
+		for(int i = 0; i < 2; i++) {
+			replacePart();
+		} // 어떤 stuff든 3번씩 부품 교
+		
+		clean();
+		assemble();
+	}
+
+	public abstract void disassemble();
+
+	public abstract void replacePart();
+
+	public abstract void clean();
+
+	public abstract void assemble();
+}

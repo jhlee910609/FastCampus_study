@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;split_strMin&apos; in &apos;com.junhee.java.fight.LastRide.lastRide(...)&apos; to &apos;split_min&apos;&#x0A;- Original project: &apos;CodeFight&apos;&#x0A;- Original element: &apos;com.junhee.java.fight.LastRide.lastRide(int).split_strMin&apos;&#x0A;- Renamed element: &apos;split_strMin&apos;&#x0A;- Update references to refactored element" description="Rename local variable &apos;split_strMin&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;com.junhee.java.fight{LastRide.java[LastRide~lastRide~I@split_strMin!293!333!302!313!\[QString;!0!false" name="split_min" references="true" stamp="1494898570162" version="1.0"/>
+</session>

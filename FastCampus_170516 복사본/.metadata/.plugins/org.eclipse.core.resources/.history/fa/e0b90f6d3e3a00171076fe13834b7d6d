@@ -1,0 +1,15 @@
+package com.junhee.java.obj;
+
+public class PhoneExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		SmartPhone smartphone = new SmartPhone("이준희");
+		
+		smartphone.turnOn();
+		smartphone.internetSearche();
+		smartphone.turnOff();
+	}
+
+}

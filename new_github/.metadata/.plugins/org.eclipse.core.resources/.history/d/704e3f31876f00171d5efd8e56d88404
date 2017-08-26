@@ -1,0 +1,15 @@
+package interfaceExample;
+
+public class RemoteControlExample {
+	
+	public static void main(String args[]){
+	
+		RemoteControl.changeBattery();
+		
+		RemoteControl rc = new Audio();
+		rc.setMute(true);
+		rc.setMute(false);
+	
+	}
+
+}

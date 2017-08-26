@@ -1,0 +1,16 @@
+package com.junhee.java.obj;
+
+public class SmartPhone extends Phone {
+
+	public SmartPhone(String owner) {
+		super(owner);
+		// TODO Auto-generated constructor stub
+	}
+	
+	public void internetSearche(){
+		System.out.println("인터넷을 검색합니다.");
+	}
+
+	
+
+}

@@ -1,0 +1,51 @@
+package com.junhee.mybbs.view;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+import com.junhee.mybbs.MybbsMain;
+import com.junhee.mybbs.model.Bbs;
+import com.junhee.mybbs.model.BbsLoader;
+
+public class BbsList {
+
+	// mvp 중 view에 해당되는 클래스
+	// 목록 데이터 불러와서 화면에 뿌리기
+	public void showList(ArrayList<Bbs> datas) {
+
+		for (Bbs bbs : datas) {
+			System.out.print(bbs.getId() + "|");
+			System.out.print(bbs.getTitle() + "|");
+			System.out.print(bbs.getAuthor() + "|");
+			System.out.print(bbs.getDate() + "|");
+			System.out.println(bbs.getView() + "");
+		}
+	}
+
+	// 쓰기 이동
+	public void goWrite() {
+
+	}
+
+	// 검색 기능
+	public void search(String word) {
+
+	}
+
+	// 삭제기능
+	// 내가 한 것.
+	// 글 목록 삭제 
+	public void removeContent() {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("===== 삭제할 번호를 입력하세요.=====");
+		String answer = scanner.nextLine();
+		Bbs bbs = new Bbs();
+		BbsLoader loader = new BbsLoader();
+		loader.read(); 
+		
+	
+		
+		
+
+	}
+}
